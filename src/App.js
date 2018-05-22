@@ -48,15 +48,12 @@ class App extends Component {
     switch (type) {
       case 'SHOW_ALL':
         newTodos = todos;
-        // console.log("all");
         break;
       case 'SHOW_COMPLETED':
         newTodos = todos.filter(t => t.completed);
-        // console.log("completed");
         break;
       case 'SHOW_ACTIVE':
         newTodos = todos.filter(t => !t.completed);
-        // console.log("active");
         break;
     }
     console.log(newTodos);
