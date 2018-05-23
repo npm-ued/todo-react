@@ -29,6 +29,7 @@ class AsyncApp extends Component {
   }
 
   handleChange(nextSubreddit) {
+    console.log(nextSubreddit);
     this.props.dispatch(selectSubreddit(nextSubreddit))
   }
 
